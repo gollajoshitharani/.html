@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>New Recommendation</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eef2f7;
+    margin: 40px;
+    color: #333;
+    text-align: center;
+  }
+
+  h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+
+  .caption {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+    font-style: italic;
+  }
+
+  .recommendations-container {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .recommendation-card {
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    padding: 25px;
+    width: 280px;
+    text-align: left;
+    position: relative;
+    font-style: italic;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .recommendation-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  }
+
+  .quote-mark {
+    font-size: 3rem;
+    color: #3498db;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+  }
+
+  .recommendation-text {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  .recommender {
+    margin-top: 20px;
+    font-weight: 700;
+    color: #2c3e50;
+  }
+
+  .recommender-title {
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #777;
+  }
+
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+
+  input[type="text"], textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    resize: vertical;
+  }
+
+  button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #217dbb;
+  }
+</style>
+</head>
+<body>
+
+<h1>Recommendations</h1>
+<p class="caption">Add a new recommendation to the list below.</p>
+
+<div class="recommendations-container" id="recommendations">
+  <div class="recommendation-card">
+    <div class="quote-mark">“</div>
+    <p class="recommendation-text">Working with Alex was an absolute pleasure. Their dedication and expertise helped our project succeed beyond expectations.</p>
+    <p class="recommender">Jamie Smith</p>
+    <p class="recommender-title">Project Manager at TechCorp</p>
+  </div>
+
+  <div class="recommendation-card">
+    <div class="quote-mark">“</div>
+    <p class="recommendation-text">Alex’s attention to detail and creativity make them a standout developer. Highly recommended for any team.</p>
+    <p class="recommender">Morgan Lee</p>
+    <p class="recommender-title">Lead Developer at WebSolutions</p>
+  </div>
+
+  <div class="recommendation-card">
+    <div class="quote-mark">“</div>
+    <p class="recommendation-text">Reliable, innovative, and collaborative — Alex consistently delivered top-quality work on tight deadlines.</p>
+    <p class="recommender">Taylor Johnson</p>
+    <p class="recommender-title">CTO at StartupX</p>
+  </div>
+</div>
+
+<form id="recommendationForm">
+  <label for="text">Recommendation Text</label>
+  <textarea id="text" rows="3" required></textarea>
+
+  <label for="name">Recommender Name</label>
+  <input type="text" id="name" required />
+
+  <label for="title">Recommender Title</label>
+  <input type="text" id="title" required />
+
+  <button type="submit">Add Recommendation</button>
+</form>
+
+<script>
+  const form = document.getElementById('recommendationForm');
+  const container = document.getElementById('recommendations');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const text = document.getElementById('text').value.trim();
+    const name = document.getElementById('name').value.trim();
+    const title = document.getElementById('title').value.trim();
+
+    if (!text || !name || !title) return;
+
+    // Create new recommendation card
+    const card = document.createElement('div');
+    card.className = 'recommendation-card';
+    card.innerHTML = `
+      <div class="quote-mark">“</div>
+      <p class="recommendation-t

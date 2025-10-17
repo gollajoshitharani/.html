@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio – JOSHITHA RANI</title>
+  <style>
+    :root{
+      --bg:#0b1220; --card:#121a2b; --text:#e7ecf5; --muted:#9fb3d1;
+      --accent:#6aa9ff;
+    }
+    *{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,Segoe UI,Roboto,Arial}
+    a{color:var(--text);text-decoration:none;transition:all .15s}
+    a:hover{font-weight:700;text-decoration:underline}
+    /* Top bar */
+    .topbar{
+      position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;
+      padding:12px 18px;background:rgba(18,26,43,.92);border-bottom:1px solid #1f2b45
+    }
+    .brand{display:flex;align-items:center;gap:10px}
+    .home-icon{width:26px;height:26px}
+    .name{
+      font-weight:800;letter-spacing:.4px;font-size:1.05rem;padding:4px 10px;border-radius:12px;
+      background:linear-gradient(135deg,#1b2b4a,#12203a);border:1px solid #243659;color:#dbe8ff;
+    }
+    .nav{display:flex;gap:16px}
+    main{max-width:1000px;margin:24px auto;padding:0 18px}
+    .card{background:var(--card);border:1px solid #1f2b45;border-radius:16px;padding:18px;margin-bottom:18px}
+    .placeholder{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <!-- NAME styled at top-left -->
+  <header class="topbar">
+    <div class="brand">
+      <!-- replace with your own icon if you like -->
+      <svg class="home-icon" viewBox="0 0 24 24" fill="none">
+        <path d="M3 10.5 12 3l9 7.5V21a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-10.5z" stroke="white"/>
+      </svg>
+      <span class="name">JOSHITHA RANI</span>
+    </div>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Project details</a>
+      <a href="#skills">Skills</a>
+      <a href="#recs">Recommendations</a>
+    </nav>
+  </header>
+
+  <!-- minimal sections so all fields are visible in the screenshot -->
+  <main>
+    <section id="about" class="card"><h2>About</h2><p class="placeholder">Summary, name & profile image here.</p></section>
+    <section id="skills" class="card"><h2>Skills</h2><p class="placeholder">Five skills with logos.</p></section>
+    <section id="projects" class="card"><h2>Project details</h2><p class="placeholder">Three styled, non-default projects.</p></section>
+    <section id="recs" class="card"><h2>Recommendations</h2><p class="placeholder">Three styled recommendations. New ones append here.</p></section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+<body>
+<h1>The audio element</h1>
+<p>Click on the play button to play a sound:</p>
+<audio controls>
+<source src=""C:\Users\gjran\Downloads\Undipova - SenSongsMp3.Co.mp3""type="audio/ogg">
+<source src=""type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<video controls>
+<<source src=""C:\Users\gjran\Videos\Captures\WhatsApp Video 2025-02-16 at 09.46.38_b1ac9fee.mp4""type="video/ogg">
+<source src=""type="video/mpeg">
+Your browser does not support the audio element.
+</video>
+</body>
+</html>

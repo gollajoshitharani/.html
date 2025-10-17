@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skills</title>
+  <style>
+    .skills-section {
+      max-width: 800px;
+      margin: 2rem auto;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .skill {
+      width: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .skill img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 0.5rem;
+    }
+
+    .skill-name {
+      font-size: 1rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="skills-section">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <!-- Original 2 skills -->
+      <div class="skill">
+        <img src="html-logo.png" alt="HTML Logo">
+        <div class="skill-name">HTML</div>
+      </div>
+      <div class="skill">
+        <img src="css-logo.png" alt="CSS Logo">
+        <div class="skill-name">CSS</div>
+      </div>
+
+      <!-- 3 new skills added by learner -->
+      <div class="skill">
+        <img src="javascript-logo.png" alt="JavaScript Logo">
+        <div class="skill-name">JavaScript</div>
+      </div>
+      <div class="skill">
+        <img src="python-logo.png" alt="Python Logo">
+        <div class="skill-name">Python</div>
+      </div>
+      <div class="skill">
+        <img src="git-logo.png" alt="Git Logo">
+        <div class="skill-name">Git</div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

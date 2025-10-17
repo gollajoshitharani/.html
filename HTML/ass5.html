@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Styled Projects</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    margin: 20px;
+  }
+
+  .projects-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .project-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 280px;
+    transition: transform 0.3s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  }
+
+  .project-title {
+    font-size: 1.4rem;
+    color: #0077cc;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 5px;
+  }
+
+  .project-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+    min-height: 70px;
+  }
+
+  .project-tech {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+  }
+
+  .project-link {
+    display: inline-block;
+    background-color: #0077cc;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+
+  .project-link:hover {
+    background-color: #005fa3;
+  }
+</style>
+</head>
+<body>
+
+<div class="projects-container">
+  <div class="project-card">
+    <h3 class="project-title">Weather Dashboard</h3>
+    <p class="project-description">A web app that shows real-time weather data for any city with animated backgrounds.</p>
+    <p class="project-tech">Technologies: React, OpenWeather API, CSS Animations</p>
+    <a class="project-link" href="#">View Project</a>
+  </div>
+
+  <div class="project-card">
+    <h3 class="project-title">Task Manager</h3>
+    <p class="project-description">Organize your daily tasks with drag-and-drop interface and deadline reminders.</p>
+    <p class="project-tech">Technologies: Vue.js, Firebase, Tailwind CSS</p>
+    <a class="project-link" href="#">View Project</a>
+  </div>
+
+  <div class="project-card">
+    <h3 class="project-title">Portfolio Website</h3>
+    <p class="project-description">A sleek portfolio website showcasing projects and skills with smooth scrolling effects.</p>
+    <p class="project-tech">Technologies: HTML5, CSS3, JavaScript, GSAP</p>
+    <a class="project-link" href="#">View Project</a>
+  </div>
+</div>
+
+</body>
+</html>

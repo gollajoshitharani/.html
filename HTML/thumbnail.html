@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <title>Thumbnail Image Gallery</title>
+     <style>
+         body{
+             font-family: Arial, sans-serif;
+             text-align: center;
+             }
+         .gallery {
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: center;
+             gap: 15px;
+             margin-top: 20px;
+             }
+          .gallery a img {
+             width: 100px;
+             height: 100px;
+             object-fit: cover;
+             border: 2px solid #ccc;
+             border-radius: 8px;
+             transition: transform 0.3s;
+           }
+          .gallery a img:hover {
+              transform: scale(1.1);
+              border-colour: #666;
+           }
+      </style>
+</head>
+<body>
+      
+     <h1>MY IMAGE GALLERY</h1>
+     <p>click on a thumbnail to view the full-sized image</p>
+
+     <div class="gallery">
+              <a href="C:\Users\gjran\Videos\Captures\BRO.jpg" target="_blank">
+              <img src="C:\Users\gjran\Videos\Captures\BRO.jpg" alt="image 1">
+         </a>
+         <a href="C:\Users\gjran\Videos\Captures\JOSHI2.jpg" target="_blank">
+              <img src="C:\Users\gjran\Videos\Captures\JOSHI2.jpg" alt="image 2">
+         </a>
+         <a href="C:\Users\gjran\Videos\Captures\JOSHI.jpg" target="_blank">
+              <img src="C:\Users\gjran\Videos\Captures\JOSHI.jpg" alt="image 3">
+         </a>
+         <a href="C:\Users\gjran\Videos\Captures\JOSHI3.jpg" target="_blank">
+              <img src="C:\Users\gjran\Videos\Captures\JOSHI3.jpg" alt="image 4">
+         </a>
+         <a href="C:\Users\gjran\Videos\Captures\WhatsApp Image 2025-03-12 at 22.34.56_b43cf563.jpg" target="_blank">
+              <img src="C:\Users\gjran\Videos\Captures\WhatsApp Image 2025-03-12 at 22.34.56_b43cf563.jpg" alt="image 5">
+         </a>
+     </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

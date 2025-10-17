@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Recommendations</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eef2f7;
+    margin: 40px;
+    color: #333;
+    text-align: center;
+  }
+
+  h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+  }
+
+  .recommendations-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .recommendation-card {
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    padding: 25px;
+    width: 280px;
+    text-align: left;
+    position: relative;
+    font-style: italic;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .recommendation-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  }
+
+  .quote-mark {
+    font-size: 3rem;
+    color: #3498db;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+  }
+
+  .recommendation-text {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  .recommender {
+    margin-top: 20px;
+    font-weight: 700;
+    color: #2c3e50;
+  }
+
+  .recommender-title {
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #777;
+  }
+</style>
+</head>
+<body>
+
+<h1>Recommendations</h1>
+
+<div class="recommendations-container">
+  <div class="recommendation-card">
+    <div class="quote-mark">“</div>
+    <p class="recommendation-text">Working with Alex was an absolute pleasure. Their dedication and expertise helped our project succeed beyond expectations.</p>
+    <p class="recommender">Jamie Smith</p>
+    <p class="recommender-title">Project Manager at TechCorp</p>
+  </div>
+
+  <div class="recommendation-card">
+    <div class="quote-mark">“</div>
+    <p class="recommendation-text">Alex’s attention to detail and creativity make them a standout developer. Highly recommended for any team.</p>
+    <p class="recommender">Morgan Lee</p>
+    <p class="recommender-title">Lead Developer at WebSolutions</p>
+  </div>
+
+  <div class="recommendation-card">
+    <div class="quote-mark">“</div>
+    <p class="recommendation-text">Reliable, innovative, and collaborative — Alex consistently delivered top-quality work on tight deadlines.</p>
+    <p class="recommender">Taylor Johnson</p>
+    <p class="recommender-title">CTO at StartupX</p>
+  </div>
+</div>
+
+</body>
+</html>
